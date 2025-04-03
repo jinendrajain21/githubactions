@@ -1,0 +1,14 @@
+name: my first example
+
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: welcome message
+        run: echo "my first GitHub Actions job"
+
+      - name: list files
+        run: ls
+
